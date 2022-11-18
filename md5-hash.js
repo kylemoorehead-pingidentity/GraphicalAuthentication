@@ -1,4 +1,4 @@
-function calculateMD5Hash(file, bufferSize) {
+(function calculateMD5Hash(file, bufferSize) {
     let def = Q.defer();
 
     let fileReader = new FileReader();
@@ -63,4 +63,4 @@ function calculate() {
         function (err) {
             // There was an error,
         });
-}
+});
