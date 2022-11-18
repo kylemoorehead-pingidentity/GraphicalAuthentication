@@ -1,4 +1,4 @@
-(function calculateMD5Hash(file, bufferSize) {
+function calculateMD5Hash(file, bufferSize) {
     let def = Q.defer();
 
     let fileReader = new FileReader();
@@ -57,10 +57,10 @@ function calculate() {
     calculateMD5Hash(file, bufferSize).then(
         function (result) {
             // Success
-            document.write(result.hashResult);
+            console.log(result.hashResult);
             // SEND result TO THE SERVER
         },
         function (err) {
             // There was an error,
         });
-});
+}
