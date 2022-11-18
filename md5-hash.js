@@ -57,7 +57,7 @@ function calculate() {
     calculateMD5Hash(file, bufferSize).then(
         function (result) {
             // Success
-            document.write(result);
+            document.write(result.hashResult);
             // SEND result TO THE SERVER
         },
         function (err) {
